@@ -1,0 +1,61 @@
+[debug] [2023-02-26T06:07:09.248Z] ----------------------------------------------------------------------
+[debug] [2023-02-26T06:07:09.250Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-02-26T06:07:09.250Z] CLI Version:   11.3.0
+[debug] [2023-02-26T06:07:09.250Z] Platform:      win32
+[debug] [2023-02-26T06:07:09.250Z] Node Version:  v18.14.2
+[debug] [2023-02-26T06:07:09.251Z] Time:          Sun Feb 26 2023 11:37:09 GMT+0530 (India Standard Time)
+[debug] [2023-02-26T06:07:09.251Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-26T06:07:09.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-26T06:07:09.258Z] > authorizing via signed-in user (aniketag787@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Projects\Chat App\chatapp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-26T06:07:18.105Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-02-26T06:07:19.148Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-02-26T06:07:19.148Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project chat-app-39806 (Chat-App) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-02-26T06:07:20.067Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chat-app-39806/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-02-26T06:07:22.423Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chat-app-39806/services/firebasedatabase.googleapis.com 200
+[debug] [2023-02-26T06:07:22.423Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chat-app-39806/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-02-26T06:07:22.426Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-39806/locations/-/instances/chat-app-39806-default-rtdb [none]
+[debug] [2023-02-26T06:07:23.340Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-39806/locations/-/instances/chat-app-39806-default-rtdb 200
+[debug] [2023-02-26T06:07:23.340Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-39806/locations/-/instances/chat-app-39806-default-rtdb {"name":"projects/562104405640/locations/us-central1/instances/chat-app-39806-default-rtdb","project":"projects/562104405640","databaseUrl":"https://chat-app-39806-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-02-26T06:07:27.096Z] >>> [apiv2][query] GET https://chat-app-39806-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-02-26T06:07:27.945Z] <<< [apiv2][status] GET https://chat-app-39806-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-02-26T06:07:27.945Z] <<< [apiv2][body] GET https://chat-app-39806-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[debug] [2023-02-26T06:07:28.436Z] Error: EISDIR: illegal operation on a directory, open 'D:\Projects\Chat App\chatapp\build'
+    at Object.openSync (node:fs:600:3)
+    at Object.writeFileSync (node:fs:2221:35)
+    at Object.createFileSync (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:63:6)
+    at Config.writeProjectFile (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:152:12)
+    at writeDBRules (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:33:12)
+    at doSetup (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:123:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async init (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:36:9)
+[error] 
+[error] Error: An unexpected error has occurred.
